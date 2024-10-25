@@ -1,0 +1,96 @@
+* {
+    box-sizing: border-box;
+  }
+
+@font-face {
+  font-family: 'Julia Stevens';
+  src: url(/assests/Juliastevens-Regular.ttf) format('truetype');
+}
+
+body {
+  font-family: 'Julia Stevens', sans-serif;
+  font-size: 16px; 
+
+  background-image: 
+    radial-gradient(
+        grey 1px,
+        transparent 0px
+  );
+  background-size: 30px 30px;
+  overflow: hidden;
+}
+
+main {
+    display: flex; 
+    /* align-self: center; */
+    justify-content: center;
+}
+
+/* bee */
+img:nth-of-type(1) {
+    position: absolute; 
+    top: 15rem;
+    left: 10rem;
+    rotate: -20deg;
+}
+
+/* bush */
+img:nth-of-type(2) {
+    position: absolute; 
+    top: 40rem;
+    left: -5rem;
+    scale: .8
+}
+
+/* bush */
+img:nth-of-type(3) {
+    position: absolute; 
+    top: 35rem;
+    right: 12rem;
+    scale: .8
+}
+
+/* flower */
+img:nth-of-type(4) {
+    position: absolute; 
+    top: 30rem;
+    left: 15rem;
+    scale: .8;
+    rotate: -20deg;
+}
+
+/* worm */
+img:nth-of-type(5) {
+    position: absolute; 
+    top: 35rem;
+    left: 20rem;
+    scale: .5;
+    rotate: 10deg;
+}
+
+/* tree */
+img:nth-of-type(6) {
+    position: absolute; 
+    top: 0rem;
+    right: -5rem;
+    scale: .8;
+    /* rotate: 10deg; */
+}
+
+/* butterfly */
+img:nth-of-type(7) {
+    position: absolute; 
+    top: 15rem;
+    left: 30rem;
+    scale: .8;
+    rotate: 20deg;
+}
+
+/* chicken */
+img:nth-of-type(8) {
+    position: absolute; 
+    top: 5rem;
+    left: 50rem;
+    scale: .5;
+    /* rotate: 20deg; */
+}
