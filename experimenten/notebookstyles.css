@@ -4,7 +4,7 @@
 
 @font-face {
   font-family: 'Julia Stevens';
-  src: url(/assests/Juliastevens-Regular.ttf) format('truetype');
+  src: url(../assests/Juliastevens-Regular.ttf) format('truetype');
 }
 
 body {
