@@ -1,0 +1,82 @@
+body {
+    box-sizing: border-box;
+    margin: 0; 
+    padding: 0; 
+}
+
+img {
+    cursor: pointer;
+}
+
+.art-settings {
+    width: 100vw; 
+    height: 100vh; 
+    position: relative; 
+    display: grid; 
+    place-items: center;
+}
+
+.img-scale-04 {
+    scale: .4;
+}
+
+.img-scale-05 {
+    scale: .5;
+}
+
+.img-scale-06 {
+    scale: .6; 
+}
+
+.img-scale-07 {
+    scale: .7; 
+}
+
+.darken {
+    filter: brightness(50%);
+    transition: .3s ease-in; 
+}
+
+.medieval {
+    background-color: #457156;
+}
+
+/* maan */
+.medieval img:nth-of-type(1) {
+    position: absolute;
+    translate: 10% -40%;
+    z-index: 0;
+}
+
+/* wolk */
+.medieval img:nth-of-type(2) {
+    position: absolute;
+    translate: -13% -70%;
+    z-index: 3;
+}
+
+/* kasteel */
+.medieval img:nth-of-type(3) {
+    position: absolute;
+    translate: 0;
+    z-index: 2;
+}
+
+/* gedicht */
+.medieval img:nth-of-type(4) {
+    position: absolute;
+    translate: -29% 6%;
+    z-index: 1;
+}
+
+/* ridder te paard */
+.medieval img:nth-of-type(5) {
+    position: absolute;
+    translate: 18% 27%;
+    z-index: 4;
+}
+
+
+
+
+

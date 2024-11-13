@@ -1,0 +1,30 @@
+.icon-list {
+    --checkbox: "\f14a";
+    --star: "\f005";
+    --bolt: "\f0e7";
+    list-style: none; 
+}
+
+.checkbox-list {
+    --icon: var(--checkbox);
+    --icon-color: cadetblue;
+}
+
+.star-list {
+    --icon: var(--star);
+    --icon-color: darkslategray;
+}
+
+.bolt-list {
+    --icon: var(--bolt);
+    --icon-color: darkolivegreen;
+}
+
+.icon-list li::before {
+    content: var(--icon);
+    color: var(--icon-color);
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900; 
+    float: left; 
+    margin-left: -1.5em;
+}
