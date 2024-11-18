@@ -37,6 +37,10 @@ img:nth-of-type(1) {
     top: 15rem;
     left: 10rem;
     rotate: -20deg;
+
+    @media screen and (max-width: 1100px) {
+        display: none;
+    }
 }
 
 /* bush */
@@ -44,7 +48,11 @@ img:nth-of-type(2) {
     position: absolute; 
     top: 40rem;
     left: -5rem;
-    scale: .8
+    scale: .8;
+
+    @media screen and (max-width: 1100px) {
+        display: none;
+    }
 }
 
 /* bush */
@@ -52,7 +60,11 @@ img:nth-of-type(3) {
     position: absolute; 
     top: 35rem;
     right: 12rem;
-    scale: .8
+    scale: .8;
+
+    @media screen and (max-width: 1100px) {
+        display: none;
+    }
 }
 
 /* flower */
@@ -62,6 +74,10 @@ img:nth-of-type(4) {
     left: 15rem;
     scale: .8;
     rotate: -20deg;
+
+    @media screen and (max-width: 1100px) {
+        display: none;
+    }
 }
 
 /* worm */
@@ -71,6 +87,10 @@ img:nth-of-type(5) {
     left: 20rem;
     scale: .5;
     rotate: 10deg;
+
+    @media screen and (max-width: 1100px) {
+        display: none;
+    }
 }
 
 /* tree */
@@ -80,6 +100,12 @@ img:nth-of-type(6) {
     right: -5rem;
     scale: .8;
     /* rotate: 10deg; */
+
+    @media screen and (max-width: 1100px) {
+        scale: .4;
+
+        top: 10rem;
+    }
 }
 
 /* butterfly */
@@ -89,6 +115,10 @@ img:nth-of-type(7) {
     left: 30rem;
     scale: .8;
     rotate: 20deg;
+
+    @media screen and (max-width: 1100px) {
+        display: none;
+    }
 }
 
 /* chicken */
