@@ -1,0 +1,17 @@
+@font-face {
+    font-family: 'Pixel Font';
+    src: url('../assests/pixel-font-les-Regular.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Mooi Pixel Font';
+    src: url('../assests/SHPinscher-Regular.otf');
+}
+
+body {
+    font-family: 'Pixel Font', Arial, sans-serif;
+}
+
+h2 {
+    font-family: 'Mooi Pixel Font', Arial, sans-serif;
+}
