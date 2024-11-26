@@ -1,8 +1,54 @@
-body {
+* {
     box-sizing: border-box;
     margin: 0; 
     padding: 0; 
 }
+
+.italiana-regular {
+    font-family: "Italiana", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+header {
+    font-family: "Italiana", serif;
+    font-weight: 400;
+    font-style: normal;
+
+    position: absolute;
+    z-index: 999;
+    width: 100vw; 
+    
+    background-color: hotpink;
+}
+
+h1 {
+    position: fixed; 
+    left: 2rem;
+    top: 1rem; 
+}
+
+h1 a {
+    text-decoration: none;
+    color: currentColor;
+}
+
+button {
+    appearance: none;
+
+    font: inherit;
+    border: none; 
+    padding: .5rem 1rem;
+    background-color: darkslategrey;
+    color: white;
+
+    position: fixed; 
+    right: 2rem;
+    top: 1rem; 
+
+    cursor: pointer;
+}
+
 
 img {
     cursor: pointer;
@@ -76,7 +122,19 @@ img {
     z-index: 4;
 }
 
+.moon-test {
+    background-color: darkslategrey;
+    padding: .5rem 1rem;
+
+    position: absolute;
+    z-index: 999;
+    translate: 200% -200%;
+
+    opacity: 0;
+}
 
 
-
-
+/* maan */
+.medieval img:nth-of-type(1):hover + .moon-test{
+    opacity: 1; 
+}
