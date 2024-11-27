@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>accessible? menu</title>
+    <link rel="stylesheet" href="accessible-menu.css">
+</head>
+<body>
+    <button class="menu-toggle" id="menu-toggle" aria-labelledby="menu-label" aria-expanded="false"></button>
+    <!-- aria-expanded="false" == default expanded state for the menu, which we want to start in the closed position -->
+
+    <nav class="menu" aria-labelledby="menu-label" id="menu">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <a href="https://www.ashleysheridan.co.uk/blog/Making+an+Accessible+Hamburger+Menu" style="display: block;">Making an Accessible Hamburger Menu - Ashley Sheridan</a>
+
+
+
+
+
+    
+    <script src="accessible-menu.js"></script>
+</body>
+</html>
