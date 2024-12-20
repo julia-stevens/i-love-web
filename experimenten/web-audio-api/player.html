@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experiment Web Audio API</title>
+    <link rel="stylesheet" href="mediahuis.css">
+    <link rel="stylesheet" href="player.css">
+</head>
+<body>
+
+    <input type="range" id="volume" min="0" max="2" value="1" step="0.01"/>
+    
+    <footer>
+        <!-- MARK: FOOTER -->
+        <section class="player neutral veronica">
+            <h2 class="show-name font-nav-secondary"></h2>
+            <p class="track-name-artist font-card-info text-secondary veronica"></p>
+            <img src="" alt="" class="track-art" width="60">
+            <div class="button-label">
+                <button id="live-nummer" class="playpause-track secondary veronica" aria-label="Speel/Pauzeer nummer">
+                    <img class="play-img" src="./assests/play.svg" alt="" width="30">
+                </button>
+                <p class="font-card-info text-secondary button-label-state"></p>
+            </div>
+        
+            <!-- PROGRESS BAR -->
+            <div class="slider-container">
+                <div class="current-time font-card-info text-secondary">00:00</div>
+                <label for="seek-slider" class="progress-bar" aria-label="Progressie bar live nummer"><input type="range" min="1" max="100" value="0" class="seek-slider"></label>
+                <div class="total-duration font-card-info text-secondary">00:00</div>
+            </div>
+        </section>
+
+        <audio src="./assests/Back-To-Black_Amy-Winehouse.mp3" class="first-song"></audio>
+        <audio src="./assests/queen-killer-queen.mp3" class="second-song"></audio>
+    </footer>
+
+    <script src="player.js"></script>
+</body>
+</html>

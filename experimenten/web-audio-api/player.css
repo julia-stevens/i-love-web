@@ -1,0 +1,254 @@
+button {
+    cursor: pointer;
+    border: inherit;
+    background: none;
+}
+
+/* MARK: FOOTER */
+/* Player */
+footer {
+    /* Grid layout, player in midden van pagina*/
+    display: flex;
+    justify-content: center;
+    margin-top: 5rem;
+}
+
+/* Grid layout voor content in player */
+.player {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    grid-template-rows: auto auto auto;
+    filter: drop-shadow(0px 0px 8px #bebebe);
+    border-radius: .5rem;
+    width: 90vw;
+    max-width: 35rem;
+    height: 7rem;
+    padding: .5rem;
+    position: fixed;
+    bottom: 1.5rem;
+    z-index: 3;
+}
+
+/* Titel van show */
+.show-name {
+    grid-column: 3/4;
+    grid-row: 1/2;
+    align-self: center;
+    justify-self: start;
+    text-transform: uppercase;
+}
+
+/* Titel van liedje */
+.track-name-artist {
+    grid-column: 3/4;
+    grid-row: 2/3;
+    align-self: start;
+    justify-self: start;
+
+    /* Flex als parent om item te centreren */
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+/* Album afbeelding */
+.track-art {
+    grid-column: 2/3;
+    grid-row: 1/3;
+    align-self: center;
+    justify-self: left;
+    width: 4.5rem;
+    border-radius: .2rem;
+}
+
+/* Layout en styling button & tekst */
+.button-label {
+    grid-column: 4/5;
+    grid-row: 1/3;
+    align-self: center;
+    justify-self: right;
+    cursor: pointer; 
+
+    /* FLEX als parent */
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+
+    p {
+        background-image:linear-gradient(#e60063 0 0);
+        background-size:0% .15em;
+        background-position: right bottom;
+        background-repeat:no-repeat;
+        padding-bottom: 2px;
+        transition: background-size .3s;
+    }
+}
+
+/* Bij hover */
+.button-label:hover {
+    p {
+        background-size: 100% .15em;
+        background-position: left bottom;
+    }
+}
+
+/* Play knop */
+.playpause-track {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    transition: .2s ease;
+
+    /* GRID als parent om items te centreren */
+    display: grid;
+    place-items: center;
+}
+
+/* Hover play/pause button */
+.playpause-track:hover {
+    opacity: .8;
+    transition: .2s ease;
+}
+
+/* Hover play/pause button wanneer nummer afspeelt */
+.playpause-track:hover.playpause-track {
+    opacity: .8;
+    transition: .2s ease;
+}
+
+/* Background-color bij laden van nummer */
+.playpause-track.loadingTrack {
+    background-color: #f594be;
+}
+
+/* Play SVG afbeelding */
+.playpause-track img {
+    width: 1rem;
+    margin-left: .2rem;
+}
+
+/* Pauze knop wanneer track aan het spelen is */
+.playpause-track img.pause-track {
+    content: url("../assests/pause.svg");
+    margin-right: .2rem;
+}
+
+/* Pauze knop wanneer track aan het spelen is */
+.playpause-track img.play-track {
+    content: url("../assests/play.svg");
+}
+
+.playpause-track img.loadingTrack {
+    content: url("../assests/loading.svg");
+    width: 25px;
+    margin-right: .2rem; 
+    animation: rotate 1.5s 2 ease-in-out;
+}
+
+/* Draai animatie loading icoon*/
+@keyframes rotate {
+    from {
+        rotate: 0deg;
+    } 
+    to {
+        rotate: 360deg;
+    }
+}
+
+/* Progress bar layout */
+.slider-container {
+    grid-column: 1/-1;
+    grid-row: 3/4;
+
+	/* FLEX als parent */
+	display: flex; 
+	justify-content: space-around;
+	align-items: center;
+	gap: .5rem;
+}
+
+/* Change the opacity when mouse is hovered */
+.progress-bar:hover {
+    opacity: 1.0;
+}
+
+/* Breedte slider */
+.progress-bar {
+    width: 100%;
+}
+
+.seek-slider {
+    width: 100%;
+}
+
+/* MARK: INPUT player */
+/*********** Baseline, reset styles ***********/
+input[type="range"] {
+    -webkit-appearance: none;
+    appearance: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+/* Removes default focus */
+input[type="range"]:focus {
+    outline: none;
+}
+
+/******** Chrome, Safari, Opera and Edge Chromium styles ********/
+/* slider track */
+input[type="range"]::-webkit-slider-runnable-track {
+    background-color: #e60063;
+    border-radius: .3rem .3rem .3rem .3rem;
+    height: 0.5rem;
+}
+
+/* slider thumb */
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+
+    /* Override default look */
+    appearance: none;
+    margin-top: -4px;
+
+    /* Centers thumb on the track */
+    background-color: #e60063;
+    border: solid 2.5px white; 
+    filter: drop-shadow(0px 0px 8px black);
+    border-radius: 0.5rem;
+    height: 1rem;
+    width: 1rem;
+}
+
+input[type="range"]:focus::-webkit-slider-thumb {
+    outline: 3px solid #e60063;
+    outline-offset: 0.125rem;
+}
+
+/*********** Firefox styles ***********/
+/* slider track */
+input[type="range"]::-moz-range-track {
+    background-color: #e60063;
+    border-radius: .3rem .3rem .3rem .3rem;
+    height: 0.5rem;
+}
+
+/* slider thumb */
+input[type="range"]::-moz-range-thumb {
+    background-color: #e60063;
+    border: solid 2.5px white; 
+    filter: drop-shadow(0px 0px 8px black);
+    border: none;
+
+    /*Removes extra border that FF applies*/
+    border-radius: 0.5rem;
+    height: 1rem;
+    width: 1rem;
+}
+
+input[type="range"]:focus::-moz-range-thumb {
+    background-color: #e60063;
+    border: solid 2.5px white; 
+    filter: drop-shadow(0px 0px 8px black);
+    outline-offset: 0.125rem;
+}
