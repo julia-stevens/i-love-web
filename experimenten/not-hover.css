@@ -1,0 +1,14 @@
+ul {
+    width: fit-content;
+
+  @media (hover) and (prefers-reduced-motion: no-preference) {
+    & > li {
+      transition: opacity .3s var(--ease-3);
+      cursor: pointer;
+    }
+    
+    &:hover > li:not(:hover) {
+      opacity: .25;
+    }
+  }
+}
