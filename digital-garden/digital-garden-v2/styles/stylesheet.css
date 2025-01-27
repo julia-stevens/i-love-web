@@ -82,14 +82,10 @@ body {
     --z-index-6: 6; 
 }
 
+
+
 /* FIGURE */
 figure {
-    position: relative;
-
-    /* GRID parent */
-    display: grid;
-    place-items: center; 
-
     img {
         cursor: pointer;
         display: block; 
