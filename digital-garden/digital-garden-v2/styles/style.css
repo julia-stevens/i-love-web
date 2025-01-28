@@ -14,7 +14,39 @@ main {
         position: relative;
 
         figure {
-            position: relative; 
+            position: absolute; 
+            width: 100%;
+            height: 100%;
+
+            /* GRID */
+            display: grid;
+            place-items: center;             
+
+            scale: .4;
+
+            @media (min-width: 320px) {
+                scale: .5;
+            }
+
+            @media (min-width: 380px) {
+                scale: .6; 
+            }
+
+            @media (min-width: 500px) {
+                scale: .7;
+            }
+
+            @media (min-width: 600px) {
+                scale: .8;
+            }
+
+            @media (min-width: 700px) {
+                scale: .9;
+            }
+
+            @media (min-width: 800px) {
+                scale: 1;
+            }
 
             img {
                 position: absolute;
@@ -38,28 +70,28 @@ main {
                 &:nth-of-type(2) {
                     scale: var(--scale-08);
                     z-index: var(--z-index-2);
-                    translate: -20% 80%;
+                    translate: -20% -80%;
                 }
 
                 /* KNIGHT */
                 &:nth-of-type(3) {
                     scale: var(--scale-05);
                     z-index: var(--z-index-2);
-                    translate: 30% 75%;
+                    translate: 30% 35%;
                 }
 
                 /* MOON */
                 &:nth-of-type(4) {
-                    scale: var(--scale-06);
+                    scale: var(--scale-05);
                     z-index: var(--z-index-0);
-                    translate: 20% -18%;
+                    translate: 15% -48%;
                 }
 
                 /* WRITINGS */
                 &:nth-of-type(5) {
                     scale: var(--scale-05);
                     z-index: var(--z-index-0);
-                    translate: -32% -7%;
+                    translate: -32% 5%;
                 }
             }
         }
@@ -79,9 +111,9 @@ main {
 
                 /* FLOWER THINGY */
                 &:nth-of-type(2) {
-                    scale: var(--scale-08);
+                    scale: var(--scale-09);
                     z-index: var(--z-index-2);
-                    translate: -4% 30%;
+                    translate: -25% 10%;
                     
                 }
 
@@ -89,7 +121,7 @@ main {
                 &:nth-of-type(3) {
                     scale: var(--scale-05);
                     z-index: var(--z-index-1);
-                    translate: 0% 60%;
+                    translate: -25% 25%;
                     
                 }
 
@@ -97,7 +129,7 @@ main {
                 &:nth-of-type(4) {
                     scale: var(--scale-06);
                     z-index: var(--z-index-0);
-                    translate: 0% 20%;
+                    translate: -20% 10%;
                 }
             }
         }
@@ -113,41 +145,42 @@ main {
                 &:nth-of-type(1) {
                     scale: var(--scale-09);
                     z-index: var(--z-index-1);
-                    translate: 53% 13%;
+                    translate: 10% -15%;
                 }
 
                 /* BEE */
                 &:nth-of-type(2) {
                     scale: var(--scale-02);
                     z-index: var(--z-index-4);
-                    translate: 40% 48%;
+                    translate: 10% 0%;
                 }
 
                 /* DOVE */
                 &:nth-of-type(3) {
                     scale: var(--scale-08);
                     z-index: var(--z-index-3);
-                    translate: 10% 0%;
+                    translate: -30% -30%;
                 }
 
                 /* FRUIT */
                 &:nth-of-type(4) {
                     scale: var(--scale-07);
                     z-index: var(--z-index-2);
-                    translate: 115% 0%;
+                    translate: 40% -18%;
                 }
 
                 /* BRANCHES */
                 &:nth-of-type(5) {
                     scale: var(--scale-03);
                     z-index: var(--z-index-3);
-                    translate: 20% 10%;
+                    translate: 0% 10%;
                 }
 
                 /* POND */
                 &:nth-of-type(6) {
-                    scale: var(--scale-07);
+                    scale: var(--scale-06);
                     z-index: var(--z-index-0);
+                    translate: 0% 10%;
                 }
             }
         }
@@ -163,28 +196,28 @@ main {
                 &:nth-of-type(1) {
                     scale: var(--scale-03);
                     z-index: var(--z-index-1);
-                    translate: -33% 3%;
+                    translate: -23% -13%;
                 }
 
                 /* FLYING FISH 2 */
                 &:nth-of-type(2) {
                     scale: var(--scale-02);
                     z-index: var(--z-index-1);
-                    translate: -6% -20%;
+                    translate: 3% -35%;
                 }
 
                 /* MOON */
                 &:nth-of-type(3) {
                     scale: var(--scale-02);
                     z-index: var(--z-index-2);
-                    translate: 5% -35%;
+                    translate: 15% -35%;
                 }
 
                 /* KRAKEN */
                 &:nth-of-type(4) {
                     scale: var(--scale-05);
                     z-index: var(--z-index-2);
-                    translate: -13% 25%;
+                    translate: -8% 38%;
                 }
 
                 /* NIGHT SKY */
@@ -197,14 +230,14 @@ main {
                 &:nth-of-type(6) {
                     scale: var(--scale-05);
                     z-index: var(--z-index-3);
-                    translate: 10% 41%;
+                    translate: 10% 46%;
                 }
 
                 /* WAVES */
                 &:nth-of-type(7) {
                     scale: calc(1.025 * var(--scale-07));
                     z-index: var(--z-index-1);
-                    translate: -17.55% 170%;
+                    translate: 0% 120%;
                 }
             }
         }
@@ -226,7 +259,7 @@ main {
                 &:nth-of-type(2){
                     scale: var(--scale-09);
                     z-index: var(--z-index-0);
-                    translate: -20% 35%;
+                    translate: -15% 17%;
                 }
 
                 /* DRAGON */
@@ -240,7 +273,7 @@ main {
                 &:nth-of-type(4){
                     scale: var(--scale-04);
                     z-index: var(--z-index-1);
-                    translate: -20% 43.5%;
+                    translate: -15% 25%;
                 }
             }
         }
@@ -256,21 +289,21 @@ main {
                 &:nth-of-type(1){
                     scale: var(--scale-07);
                     z-index: var(--z-index-2);
-                    translate: 25% 35%;
+                    translate: 0% 15%;
                 }
 
                 /* MOON */
                 &:nth-of-type(2){
                     scale: var(--scale-04);
                     z-index: var(--z-index-1);
-                    translate: -19% -9%;
+                    translate: -19% -30%;
                 }
 
                 /* PAPER */
                 &:nth-of-type(3){
                     scale: var(--scale-05);
                     z-index: var(--z-index-1);
-                    translate: 15% 25%;
+                    translate: 15% 18%;
                 }
 
                 /* STARY NIGHT */
@@ -292,28 +325,27 @@ main {
                 &:nth-of-type(1){
                     scale: var(--scale-04);
                     z-index: var(--z-index-2);
-                    translate: -32% 12%;
+                    translate: -20% 0%;
                 }
 
                 /* ORANGES */
                 &:nth-of-type(2){
                     scale: var(--scale-02);
                     z-index: var(--z-index-2);
-                    translate: 5% -20%;
+                    translate: 18% -5%;
                 }
 
                 /* ROAD */
                 &:nth-of-type(3){
                     scale: var(--scale-06);
                     z-index: var(--z-index-0);
-                    translate: -5% 19.3%;
+                    translate: 0% 14.2%;
                 }
 
                 /* PILLARS */
                 &:nth-of-type(4){
                     scale: var(--scale-08);
                     z-index: var(--z-index-1);
-
                 }
             }
         }
@@ -329,7 +361,7 @@ main {
                 &:nth-of-type(1){
                     scale: var(--scale-06);
                     z-index: var(--z-index-2);
-                    translate: -28% 28%;
+                    translate: -10% 35%;
                 }
 
                 /* INSECT */
@@ -337,7 +369,7 @@ main {
                     scale: var(--scale-04);
                     z-index: var(--z-index-1);
                     rotate: 45deg;
-                    translate: 25% -5%;
+                    translate: 30% -5%;
                 }
 
                 /* LANDSCAPE */
@@ -350,21 +382,21 @@ main {
                 &:nth-of-type(4){
                     scale: calc(.7 * var(--scale-02));
                     z-index: var(--z-index-3);
-                    translate: -45% -20%;
+                    translate: -25% -5%;
                 }
 
                 /* MOUSE */
                 &:nth-of-type(5){
                     scale: var(--scale-03);
                     z-index: var(--z-index-3);
-                    translate: 3% 25%;
+                    translate: 3% 28%;
                 }
 
                 /* PILLARS */
                 &:nth-of-type(6){
                     scale: var(--scale-06);
                     z-index: var(--z-index-1);
-                    translate: -23% -15%;
+                    translate: -12% -9%;
                 }
             }
         }
@@ -380,31 +412,29 @@ main {
                 &:nth-of-type(1){
                     scale: var(--scale-1);
                     z-index: var(--z-index-0);
-                    translate: 20% 50%;
                 }
 
                 /* FOUNTAIN */
                 &:nth-of-type(2){
                     scale: var(--scale-04);
                     z-index: var(--z-index-2);
-                    translate: -28% 3%;
+                    translate: -15% 3%;
                 }
 
                 /* STORKS */
                 &:nth-of-type(3){
                     scale: var(--scale-06);
                     z-index: var(--z-index-1);
-                    translate: -30% 15%;
+                    translate: -40% -30%;
                 }
 
                 /* READING */
                 &:nth-of-type(4){
                     scale: var(--scale-06);
                     z-index: var(--z-index-3);
-                    translate: 20% 100%;
+                    translate: 15% 40%;
                 }
             }
         }
     }
 }
-
