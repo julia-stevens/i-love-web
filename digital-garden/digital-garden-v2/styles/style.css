@@ -27,8 +27,6 @@ main {
             grid-row: 1/2;    
             background-color: var(--bg-color-1a);
 
-            /* visibility: hidden; */
-
             img {
                 /* CASTLE */
                 &:nth-of-type(1) {
@@ -104,46 +102,308 @@ main {
             }
         }
     
+        /* COLLAGE 3 - Around The Waterlilies */
         &:nth-of-type(3) {
             grid-column: 3/4;
             grid-row: 1/2;    
             background-color: var(--bg-color-3a);
+
+            img {
+                /* ARTICLE */
+                &:nth-of-type(1) {
+                    scale: var(--scale-09);
+                    z-index: var(--z-index-1);
+                    translate: 53% 13%;
+                }
+
+                /* BEE */
+                &:nth-of-type(2) {
+                    scale: var(--scale-02);
+                    z-index: var(--z-index-4);
+                    translate: 40% 48%;
+                }
+
+                /* DOVE */
+                &:nth-of-type(3) {
+                    scale: var(--scale-08);
+                    z-index: var(--z-index-3);
+                    translate: 10% 0%;
+                }
+
+                /* FRUIT */
+                &:nth-of-type(4) {
+                    scale: var(--scale-07);
+                    z-index: var(--z-index-2);
+                    translate: 115% 0%;
+                }
+
+                /* BRANCHES */
+                &:nth-of-type(5) {
+                    scale: var(--scale-03);
+                    z-index: var(--z-index-3);
+                    translate: 20% 10%;
+                }
+
+                /* POND */
+                &:nth-of-type(6) {
+                    scale: var(--scale-07);
+                    z-index: var(--z-index-0);
+                }
+            }
         }
     
+        /* COLLAGE 4 - Out On The Sea */
         &:nth-of-type(4) {
             grid-column: 1/2;
             grid-row: 2/3;   
             background-color: var(--bg-color-4a);
+
+            img {
+                /* FLYING FISH 1 */
+                &:nth-of-type(1) {
+                    scale: var(--scale-03);
+                    z-index: var(--z-index-1);
+                    translate: -33% 3%;
+                }
+
+                /* FLYING FISH 2 */
+                &:nth-of-type(2) {
+                    scale: var(--scale-02);
+                    z-index: var(--z-index-1);
+                    translate: -6% -20%;
+                }
+
+                /* MOON */
+                &:nth-of-type(3) {
+                    scale: var(--scale-02);
+                    z-index: var(--z-index-2);
+                    translate: 5% -35%;
+                }
+
+                /* KRAKEN */
+                &:nth-of-type(4) {
+                    scale: var(--scale-05);
+                    z-index: var(--z-index-2);
+                    translate: -13% 25%;
+                }
+
+                /* NIGHT SKY */
+                &:nth-of-type(5) {
+                    scale: var(--scale-11);
+                    z-index: var(--z-index-0);
+                }
+
+                /* SHIP */
+                &:nth-of-type(6) {
+                    scale: var(--scale-05);
+                    z-index: var(--z-index-3);
+                    translate: 10% 41%;
+                }
+
+                /* WAVES */
+                &:nth-of-type(7) {
+                    scale: calc(1.025 * var(--scale-07));
+                    z-index: var(--z-index-1);
+                    translate: -17.55% 170%;
+                }
+            }
         }
     
+        /* COLLAGE 5 - Dragon */
         &:nth-of-type(5) {
             grid-column: 2/3;
             grid-row: 2/3;    
             background-color: var(--bg-color-5a);
+
+            img {
+                /* BUILDING */
+                &:nth-of-type(1){
+                    scale: var(--scale-06);
+                    z-index: var(--z-index-2);
+                }
+
+                /* CONSTELLATION */
+                &:nth-of-type(2){
+                    scale: var(--scale-09);
+                    z-index: var(--z-index-0);
+                    translate: -20% 35%;
+                }
+
+                /* DRAGON */
+                &:nth-of-type(3){
+                    scale: var(--scale-06);
+                    z-index: var(--z-index-3);
+                    translate: 5% 0%;
+                }
+
+                /* WIZARD */
+                &:nth-of-type(4){
+                    scale: var(--scale-04);
+                    z-index: var(--z-index-1);
+                    translate: -20% 43.5%;
+                }
+            }
         }
     
+        /* COLLAGE 6 - Around The Fire*/
         &:nth-of-type(6) {
             grid-column: 3/4;
             grid-row: 2/3;    
             background-color: var(--bg-color-6a);
+
+            img {
+                /* WOMEN */
+                &:nth-of-type(1){
+                    scale: var(--scale-07);
+                    z-index: var(--z-index-2);
+                    translate: 25% 35%;
+                }
+
+                /* MOON */
+                &:nth-of-type(2){
+                    scale: var(--scale-04);
+                    z-index: var(--z-index-1);
+                    translate: -19% -9%;
+                }
+
+                /* PAPER */
+                &:nth-of-type(3){
+                    scale: var(--scale-05);
+                    z-index: var(--z-index-1);
+                    translate: 15% 25%;
+                }
+
+                /* STARY NIGHT */
+                &:nth-of-type(4){
+                    scale: var(--scale-06);
+                    z-index: var(--z-index-0);
+                }
+            }
         }
     
+        /* COLLAGE 7 - Italy */
         &:nth-of-type(7) {
             grid-column: 1/2;
             grid-row: 3/4;   
             background-color: var(--bg-color-7a);
+
+            img {
+                /* BIRDS */
+                &:nth-of-type(1){
+                    scale: var(--scale-04);
+                    z-index: var(--z-index-2);
+                    translate: -32% 12%;
+                }
+
+                /* ORANGES */
+                &:nth-of-type(2){
+                    scale: var(--scale-02);
+                    z-index: var(--z-index-2);
+                    translate: 5% -20%;
+                }
+
+                /* ROAD */
+                &:nth-of-type(3){
+                    scale: var(--scale-06);
+                    z-index: var(--z-index-0);
+                    translate: -5% 19.3%;
+                }
+
+                /* PILLARS */
+                &:nth-of-type(4){
+                    scale: var(--scale-08);
+                    z-index: var(--z-index-1);
+
+                }
+            }
         }
     
+        /* COLLAGE 8 - A Fairytale */
         &:nth-of-type(8) {
             grid-column: 2/3;
             grid-row: 3/4;
             background-color: var(--bg-color-8a);
+
+            img {
+                /* STEPS */
+                &:nth-of-type(1){
+                    scale: var(--scale-06);
+                    z-index: var(--z-index-2);
+                    translate: -28% 28%;
+                }
+
+                /* INSECT */
+                &:nth-of-type(2){
+                    scale: var(--scale-04);
+                    z-index: var(--z-index-1);
+                    rotate: 45deg;
+                    translate: 25% -5%;
+                }
+
+                /* LANDSCAPE */
+                &:nth-of-type(3){
+                    scale: var(--scale-1);
+                    z-index: var(--z-index-0);
+                }
+
+                /* LEMONS */
+                &:nth-of-type(4){
+                    scale: calc(.7 * var(--scale-02));
+                    z-index: var(--z-index-3);
+                    translate: -45% -20%;
+                }
+
+                /* MOUSE */
+                &:nth-of-type(5){
+                    scale: var(--scale-03);
+                    z-index: var(--z-index-3);
+                    translate: 3% 25%;
+                }
+
+                /* PILLARS */
+                &:nth-of-type(6){
+                    scale: var(--scale-06);
+                    z-index: var(--z-index-1);
+                    translate: -23% -15%;
+                }
+            }
         }
     
+        /* COLLAGE 9 - In The Garden */
         &:nth-of-type(9) {
             grid-column: 3/4;
             grid-row: 3/4;
             background-color: var(--bg-color-9a);
+
+            img {
+                /* GARDEN */
+                &:nth-of-type(1){
+                    scale: var(--scale-1);
+                    z-index: var(--z-index-0);
+                    translate: 20% 50%;
+                }
+
+                /* FOUNTAIN */
+                &:nth-of-type(2){
+                    scale: var(--scale-04);
+                    z-index: var(--z-index-2);
+                    translate: -28% 3%;
+                }
+
+                /* STORKS */
+                &:nth-of-type(3){
+                    scale: var(--scale-06);
+                    z-index: var(--z-index-1);
+                    translate: -30% 15%;
+                }
+
+                /* READING */
+                &:nth-of-type(4){
+                    scale: var(--scale-06);
+                    z-index: var(--z-index-3);
+                    translate: 20% 100%;
+                }
+            }
         }
     }
 }
