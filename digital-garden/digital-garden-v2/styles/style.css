@@ -3,6 +3,12 @@ header {
 }
 
 main {
+    overflow: auto;
+
+    &.active {
+        cursor: grabbing;
+    }
+
     /* GRID parent */
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
