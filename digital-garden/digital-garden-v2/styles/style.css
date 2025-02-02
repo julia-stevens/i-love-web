@@ -1,6 +1,20 @@
 header {
-    display: none;
-}
+    position: fixed;
+    z-index: var(--z-index-6);
+    padding: 1rem 2rem;
+    background-color: transparent;
+    backdrop-filter: invert(80%);
+    width: 100%;
+    font-family: "Italiana", sans-serif;
+
+    nav {
+        color: var(--font-color-main);
+        
+        h1 {
+            font-size: 2rem;
+        }
+    }
+  }
 
 main {
     overflow: auto;
