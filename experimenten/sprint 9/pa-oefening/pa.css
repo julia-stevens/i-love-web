@@ -1,8 +1,0 @@
-h1 {
-    span {
-        display: block;
-        background: linear-gradient(0deg, rgb(191, 157, 253) 0%, rgb(0, 0, 0) 100%);
-        color: transparent; 
-        background-clip: text;
-    }
-}
