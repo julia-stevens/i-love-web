@@ -1,0 +1,94 @@
+# Sprint 7 - Connect Your Tribe
+## Week 1
+
+### Maandag 3 februari 2025
+#### Visitekaartje met NodeJS
+Ik heb vandaag gewerkt aan het werken met NodeJS en Liquid. Ik heb hiervoor de workshop gevolgd en mijn visitekaartje uit sprint 1 verwerkt in de Liquid documenten. 
+
+Vervolgens ben ik aan de slag gegaan met het herontwerpen van mijn visitekaartje. Hiervoor heb ik schetsen gemaakt en heb ik gewerkt aan breakdown schetsen. Ook heb ik een stylesheet gemaakt en de eerste opzet in HTML gebouwd. Dit staat allemaal beschreven in deze issue: https://github.com/julia-stevens/connect-your-tribe-profile-card/issues/1
+
+**Wat heb ik geleerd?**
+* Ik heb geleerd wat NodeJS is en hoe ik dit moet installeren om te gebruiken in VScode (`npm install` `npm start`)
+* Ik heb geleerd hoe ik moet werken met Liquid bestanden (`footer, head, index`) en heb dus de eerste stappen gezet om dynamische code te schrijven 
+* Ik heb geleerd hoe ik gegevens uit de WHOIS API kan gebruiken in de Liquid bestanden, bijvoorbeeld: `{{ person.name }}`
+
+### Dinsdag 4 februari 2025
+**Wat heb ik geleerd?**
+
+Vandaag ben ik aan de slag gegaan met het parsen van de custom data velden uit de API. Na wat gepuzzel ben ik op `JSON.parse` gekomen en heb ik met `personResponseJSON.data.custum = JSON.parse(personResponseJSON.data.custom)` de data kunnen parsen. 
+
+Ik heb hier ook een if statement omheen gezet, zodat de data alleen geparset wordt als het om een string gaat en na feedback van Krijn heb ik dit allemaal in een try...catch gezet. 
+
+```js
+
+try {
+  // parse person.custom alleen als het een string is (anders wordt een object geparsed en krijg je errors)
+  if (typeof personResponseJSON.data.custom === "string") {
+    personResponseJSON.data.custom = JSON.parse(personResponseJSON.data.custom);
+  }
+} catch (error) {
+  console.error(error);
+  personResponseJSON.data.custom = {}; // person.custom leeg, zodat alleen deze velden leeg zijn bij een error (en niet de hele pagina failt)
+}
+```
+
+### Woensdag 5 februari 2025
+**Wat heb ik geleerd?**
+
+Tijdens de workshop van vandaag zijn we aan de slag gegaan met het creëeren van meerdere pagina's. Ik heb geleerd hoe je meerdere routes kunt aanmaken en deze aan de views kunt koppelen. 
+
+```js
+app.get('/oefenen', async function (request, response) {
+  // Render index.liquid uit de Views map en geef de opgehaalde data mee, in een variabele genaamd person
+    response.render('oefenen.liquid', {person: personResponseJSON.data})
+})
+```
+
+Verder ben ik vandaag aan de slag gegaan met het verder bouwen aan mijn visitekaartje. Ik had mij eerste gericht op de one column layout voor mobiel en ben vandaag aan de slag gegaan met het ontwerp op desktop. Hiervoor heb ik layout aangepast met `flex` en de windows in het midden met `absolute` gepositioneerd en verplaatst met `transition`
+
+### Donderdag 6 februari 2025
+**Aantekeningen JS Challenge - Uitleg code in `server.js`**
+
+![image](https://github.com/user-attachments/assets/e28abeab-35b7-445d-b7e5-f9eeae01c1cc)
+![image](https://github.com/user-attachments/assets/7eb973fb-033e-411a-8f11-fc3df16b50af)
+
+* met de engine worden views gerenderd
+* view zegt: als ik data krijg, dan kan ik dit gebruiken om de HTML te renderen 
+* express zorgt dat je kunt zien (localhost)
+* `await` is asynchrone actie --> wacht tot deze data is opgehaald
+
+**`forEach` in JS**
+
+Eerder deze week had ik code geschreven voor de desktop items. Namelijk bij een klik, voeg een class toe, zodat het bijbehorende window getoond wordt. Ik had dit voor elke `button` apart geschreven, maar dit kon natuurlijk veel efficiënter, alleen wist ik niet goed hoe. Ik heb dit aan Joost gevraagd en hij heeft 3 stappen pseudocode opgeschreven. Op basis hiervan ben ik aan de slag gegaan en heb ik de code flink kunnen inkorten (DRY). Zie hier de bijbehorende issues: 
+* https://github.com/julia-stevens/connect-your-tribe-profile-card/issues/6
+* https://github.com/julia-stevens/connect-your-tribe-profile-card/issues/9
+
+```js
+// 1. selecteer alle buttons (querySelectorAll)
+const desktopItems = document.querySelectorAll(".desktop-item");
+
+// 2. loop door alle buttons && voeg voor iedere button een eventListener toe
+desktopItems.forEach(item => {
+    const desktopItemsButton = item.querySelector("button");
+    desktopItemsButton.addEventListener("click", togglePopup);
+})
+
+// 3. togglePopup met een parameter (element)
+function togglePopup(event) {
+    const desktopItemButton = event.currentTarget; 
+    const desktopItem = desktopItemButton.closest(".desktop-item");
+    const desktopWindow = desktopItem.querySelector("article");
+    desktopWindow.classList.toggle("show");
+}
+```
+
+### Vrijdag 7 februari 2025
+**Code/design review visitekaartje**
+
+Ik heb feedback gegeven aan: 
+* [Nadia](https://github.com/nadiachaja/connect-your-tribe-profile-card/issues/1#issuecomment-2642522243)
+* [Stella](https://github.com/misspastelwitch/connect-your-tribe-profile-card/issues/1#issuecomment-2642526186)
+* [Anouk](https://github.com/AnoukdeRooij24/connect-your-tribe-profile-card/issues/1#issuecomment-2642587600)
+
+Deze feedback heb ik ontvangen: 
+* [Issue redesign visitekaartje](https://github.com/julia-stevens/connect-your-tribe-profile-card/issues/1)

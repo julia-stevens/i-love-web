@@ -1,0 +1,11 @@
+**schrijf op wat je vandaag hebt gedaan en geleerd**
+* feedback besproken met mijn groep en feedback gegeven aan mijn groepsgenoten 
+* sprint planning gemaakt voor sprint 3 (zie projectboard)
+* workshop wcag gevolgd
+* gewerkt aan de deeltaak wcag audit voor pathe.nl
+
+**schrijf op wat je nog moet doen voor de wcag audit presentatie van woensdag**
+* ik moet de eerste opdracht, lighthouse test, afronden door de laatste geslaagde testen te beschrijven 
+* ik moet de tweede opdracht, handmatig testen, beginnen en afronden
+
+ZIE HIER: https://github.com/julia-stevens/wcag-audit/wiki/Deeltaak-WCAG-audit-%E2%80%90-pathe.nl

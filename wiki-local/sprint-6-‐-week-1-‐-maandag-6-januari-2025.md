@@ -1,0 +1,15 @@
+# Sprint 6 The Startup
+## Week 1
+### Maandag 6 januari 2025
+
+#### Briefing/Debriefing
+
+[Briefing bij Drukwerkdeal](https://github.com/julia-stevens/the-startup-responsive-interactive-website/issues/1)
+
+[Debriefing](https://github.com/julia-stevens/the-startup-responsive-interactive-website/issues/2)
+
+<img src="https://github.com/user-attachments/assets/63f40c83-2d41-44f5-886e-2f280f06c102" width="350">
+
+#### Goede voornemens
+Bij we love web direct duidelijk aantekeningen maken en verwerken in de gemaakte we love web omgeving binnen i love web. 
+

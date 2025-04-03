@@ -1,0 +1,31 @@
+# Sprint 2
+## The client website
+### Week 1
+### Dinsdag 24 september 
+
+### Wat heb je gedaan? / ### Wat heb je geleerd? 
+1. Ik heb de CSS workshop gevolgd over gradients & ben aan de slag gegaan met de challenges: 
+* Challenge 1: https://codepen.io/js1909/pen/bGXGxPv
+* Challenge 2: https://codepen.io/js1909/pen/GRVRYNy
+
+1a. Wat heb je geleerd? 
+* Ik heb geleerd dat je veel meer met gradients kan dan ik dacht, bijvoorbeeld: 
+* harde lijnen maken en dus vlaggen creëren: 
+
+`li:nth-of-type(1) {
+	background-image: 
+		linear-gradient(
+			var(--rood) 0 calc(100% * 1/3), 
+			var(--wit) calc(100% * 1/3) calc(100% * 2/3), 
+			var(--rood) 0
+		);
+}`
+
+2. Ik heb feedback gevraagd aan Krijn over de HTML van mijn persoonlijke squad page: https://julia-stevens.github.io/your-tribe-squad-page/julia.html
+
+Ontvangen feedback: 
+* bij links zou de `alt` moeten beschrijven waar de link naar toe gaat
+* is een `ul` wel een lijst, als je als eerst de list-style-type aanpast? 
+* om de HTML te checken, kun je de CSS uitzetten en checken op de structuur nog steeds logisch is
+* probeer door de vormgeving heen te prikken en de informatie op een logische manier te structureren
+* je kunt de `alt` ook bewust leeg laten, denk bijvoorbeeld aan knoppen met afbeeldingen en tekst die dubbel is (studenten knop in nav)

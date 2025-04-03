@@ -1,0 +1,28 @@
+# Sprint 1
+## The client website
+
+## Week 3
+## Donderdag 10 oktober 2024
+## Sprint review
+
+Vandaag heb ik samen met mijn groep de sprint review gehouden met onze opdrachtgever, Nills. Iedereen heeft een korte demonstratie gegeven van zijn gemaakte werk en vragen kunnen stellen. 
+
+Feedback & Input: 
+* Functionaliteit dat de balken omhoog/omlaag gaan bij scrollen is een goede toevoeging. 
+* Ga aan de slag met een gezamenlijk overzicht van de programmering. 
+* Ga aan de slag met de tijdlijn en laat een verschil zijn in de grootte van de kaartjes m.b.t. duur van het programma. 
+* Wat betreft de opdrachtgever kan de header, etc. volledig buiten beschouwing gelaten worden en kunnen wij ons gaan richten op puur de weergave van de programmering. 
+* Let op semantische HTML
+* Ga tijdens de volgende sprint dus vooral aan de slag met het gezamenlijke programma en voor je hierin vrij om het te ontwerpen zoals je wilt. Ga mooie dingen maken.
+
+Inspiratie: 
+* https://www.bbc.co.uk/sounds/schedules/bbc_radio_one
+* https://www.radiotimes.com/radio/radio-listings/
+
+Schetsen: 
+
+![image](https://github.com/user-attachments/assets/cef94906-00aa-4a56-b158-ab7d4f403dc4)
+
+![image](https://github.com/user-attachments/assets/4d14f9dd-7cc0-4958-8404-9534e22a52f1)
+
+

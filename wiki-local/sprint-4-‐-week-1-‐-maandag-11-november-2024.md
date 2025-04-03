@@ -1,0 +1,51 @@
+# Sprint 4 - Look and Feel
+## Week 1
+### Maandag 11 november
+
+#### Wat heb je vandaag gedaan? Voeg links toe naar voorbeelden en bronnen. 
+
+Ik heb dit vandaag gedaan: 
+* Sprint planning gemaakt, zie hier de link naar mijn geüpdatet project bord: https://github.com/users/julia-stevens/projects/3
+* Feedback sprint review (sprint 3) besproken met mijn groep, zie hier de ontvangen feedback: https://github.com/julia-stevens/i-love-web/wiki/sprint-3-%E2%80%90-week-2-%E2%80%90-donderdag-24-oktober-2024
+* Sitemap & Wireframes gemaakt van de website (deze ga ik nog aanpassen o.b.v. ontvangen feedback én ik ga een aantal detailpagina's toevoegen, deze volgen ook later). Zie onderstaande afbeeldingen
+
+<img src="https://github.com/user-attachments/assets/30415ebd-935c-43dd-bea4-c197c3772c5e" width="450">
+
+* Huisstijl van Transavia geanalyseerd en hierbij uitingen en herkenning opgeschreven
+
+<img src="https://github.com/user-attachments/assets/ca98dd1c-15f4-4111-bc58-6c6e492d9ee7" width="450">
+
+* Interface inventory gemaakt (met mijn groepje), zie hiervoor Figma: https://www.figma.com/design/INZhyl3rxr3skj2rwCjVFU/Mediahuis-Design-Guide?node-id=2299-3810&t=uxQw5nYXbrn7iMxx-1
+* Styleguide gemaakt met een overzicht van de kleuren, typografie, forms en buttons: https://www.figma.com/design/INZhyl3rxr3skj2rwCjVFU/Mediahuis-Design-Guide?node-id=2296-4071&t=uxQw5nYXbrn7iMxx-1
+* Stylesheet gemaakt, eerst individueel: https://github.com/vsheo/look-and-feel-styleguide/blob/main/indiv_css/julia.css
+* Daarna gezamenlijk: https://github.com/vsheo/look-and-feel-styleguide/blob/main/mediahuis.css
+* Ook heb ik de ReadMe geschreven: https://github.com/vsheo/look-and-feel-styleguide/blob/main/README.md
+ 
+#### Schrijf 3 dingen op die je geleerd hebt. 
+1. Ik heb geleerd waarom je een huisstijl belangrijk is. Het is een visuele identiteit, geeft aan wat je kan verwachten, biedt een ervaring en geeft de gebruiker vertrouwen. 
+2. Ik heb geleerd hoe je een stylesheet maakt. Dit door eerst een interface inventory te maken en dus per onderdeel de visuele uitwerkingen verzamelen (knoppen, links, afbeeldingen, typografie, etc) op basis van deze informatie kun je een styleguide maken. 
+3. Ik heb geleerd hoe je een stylesheet opstelt op basis van een styleguide. Dit doe je in CSS door classes te schrijven voor de stijlen die je in de styleguide gedefinieerd hebt. 
+
+**Vervolgstappen**
+
+Hoewel ik al veel geleerd heb tijdens deze workshop en het concept van een stylesheet mij duidelijk is, heb ik nog wat onduidelijkheden over de praktische uitwerking hiervan. Ik heb een aantal vragen: 
+* Zet je de properties in de `:root` of in een `class`?
+* Hoe wordt typografie gedefinieerd? 
+* Wat kun je nog meer definiëren in een stylesheet? 
+
+Ik ga deze week verder onderzoek naar deze vragen, hiervoor heb ik deze bronnen: 
+* https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties
+* https://www.smashingmagazine.com/2018/05/css-custom-properties-strategy-guide/
+* https://css-tricks.com/breaking-css-custom-properties-out-of-root-might-be-a-good-idea/
+* https://lea.verou.me/blog/2021/10/custom-properties-with-defaults/
+
+#### Hoe ga je met je team deze teamopdracht aanpakken?
+We hebben als groep afgesproken om samen fysiek op school verder te werken aan de opdracht en eventueel via Teams contact met elkaar op te nemen. We willen ook eerst individueel aan de slag en daarna gezamenlijk. Voor deze opdracht betekent dit dus dat we eerste individueel een stylesheet maken en daarna gezamenlijk een stylesheet maken. Dit om ervoor te zorgen dat iedereen de kans krijgt om nieuwe dingen te leren en zodat we elkaar kunnen aanvullen. 
+
+##### Waar ga je afspraken bijhouden?
+We hebben in de ReadMe een aantal afspraken staat m.b.t. de stylesheet: https://github.com/vsheo/look-and-feel-styleguide/blob/main/README.md
+
+1. Bij een aanpassing en/of aanvulling dient er een issue gemaakt te worden met toelichting over de wijziging of toevoeging. Hierbij moet een visueel voorbeeld weergegeven worden en de nieuwe code. Ook moeten de overige teamleden getagd worden en toestemming geven en/of aanvullingen geven. Daarna kan de code gewijzigd en gepusht worden.
+2. Iedereen moet het met de aanpassing en/of aanvulling eens zijn.
+3. Alleen de persoon die de wijziging heeft voorgesteld wijzigt de code en pusht dit, om merge conflicten te voorkomen.
+4. Wanneer er gepusht is, worden de andere teamleden ingelicht, zodat zij de actuele code kunnen pullen en met de juiste versie van de stylesheet kunnen werken.

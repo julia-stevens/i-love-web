@@ -1,0 +1,60 @@
+# Sprint 9 - The Web is for Everyone
+## Week 1
+### Maandag 17 maart 2025
+Deze sprint ben ik begonnen met het maken van de sprint planning. 
+
+<img width="321" alt="image" src="https://github.com/user-attachments/assets/57d114bc-6f49-4ae8-bf8d-a995ce00963a" />
+
+Daarna zijn we aan de slag gegaan met de workshop progressive enhancement
+
+<img width="280" alt="image" src="https://github.com/user-attachments/assets/4d2af4c1-0771-424e-80c0-af773b8a212a" />
+
+Vervolgens heb ik een idee bedacht en uitgetekend om een POST te maken voor oncollaboration. 
+
+<img width="311" alt="image" src="https://github.com/user-attachments/assets/e4458259-312b-46c4-8d7d-031083e5ec49" />
+
+Ook ben ik aan de slag gegaan met het maken van een herontwerp voor het platform. Zie deze issue: https://github.com/julia-stevens/the-web-is-for-everyone-interactive-functionality/issues/2
+
+### Dinsdag 18 maart 2025
+Vandaag heb ik gewerkt aan het maken van de wireflows voor mijn ontwerp. Zie deze issue: https://github.com/julia-stevens/the-web-is-for-everyone-interactive-functionality/issues/1
+
+Vervolgens ben ik aan de slag gegaan met het maken van de GET en POST routes: https://github.com/julia-stevens/the-web-is-for-everyone-interactive-functionality/issues/3 en zie voor de POST deze issue: https://github.com/julia-stevens/the-web-is-for-everyone-interactive-functionality/issues/1
+
+### Woensdag 19 maart 2025
+Vandaag heb ik les gehad over UI states en heb ik schetsen gemaakt om deze toe te passen. Ook heb ik de eerste states gemaakt in code: 
+Zie Figma: https://www.figma.com/design/BfNlwlghQo4GKty5b9saOC/Oncollaboration?node-id=101-6039&t=EbFyI1Nms7Z6nSlT-1
+
+En zie een aantal voorbeelden: 
+
+<img width="472" alt="image" src="https://github.com/user-attachments/assets/41ce30ec-2740-4b15-9b2a-6cc6d7b0d363" />
+
+<img width="705" alt="image" src="https://github.com/user-attachments/assets/e36c66f1-2a56-4b33-b87b-9c80be2cc251" />
+
+```liquid
+        {% if bookmarkedIds contains webinar.id %}
+            <button type="submit" class="bookmark-btn highlight-btn">
+                <img src="/assets/icons/bookmarks-blue-marked.svg" alt="" width="20">    
+                Bookmarked
+            </button> 
+        {% else %}
+            <button type="submit" class="bookmark-btn highlight-btn">
+                <img src="/assets/icons/bookmarks-blue.svg" alt="" width="20">
+                Bookmark
+            </button>
+        {% endif %}
+```
+
+### Donderdag 20 maart 2025
+Ik ben vandaag aan de slag gegaan met de styling van de een aantal componenten, zoals de header, breadcrumbs and de cards. Ook heb ik de verschillende states tot nu toe vormgegeven (bookmark (ideal) en bookmarked (success)). Daarnaast heb ik de DELETE functie toegevoegd aan de knop. 
+
+### Vrijdag 21 maart 2025
+Vandaag was de code/design review: 
+
+**Gegeven feedback**: 
+* https://github.com/Sebastiaan-hva/the-web-is-for-everyone-interactive-functionality/issues/7
+* https://github.com/DivaniNL/the-web-is-for-everyone-interactive-functionality/issues/28
+
+**Ontvangen feedback**: 
+* https://github.com/julia-stevens/the-web-is-for-everyone-interactive-functionality/issues/6
+
+Daarnaast heb ik vandaag Nadia geholpen bij haar GET/POST. Ze kon haar data wel posten, maar het lukte nog niet om een overzicht te krijgen van de ge-post-te data. Uiteindelijk is het ons samen gelukt om deze te tonen. 
