@@ -1,14 +1,16 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Julia's I Love Web</title>
-    <link rel="stylesheet" href="./styles/styles.css">
-</head>
-<body>
+{% render "partials/head.liquid" %}
 
-    <section class="flower-grid">
+{{ files | json }}
+
+<section>
+    <h2>Mijn artikelen</h2>
+    {% for file in files %}
+        <a href="/{{ file | slice:0,-3 }}" style="display: block">{{ file | slice:0,-3 }}
+        </a>
+    {% endfor %}
+</section>
+
+    {% comment %} <section class="flower-grid">
         <h1>Welkom bij mijn <em>I Love Web</em></h1>
         <!-- <img src="./assests/plants/plant-1-light.png" alt="">
         <img src="./assests/plants/plant-2-light.png" alt="">
@@ -72,6 +74,7 @@
 
     <section class="pa-oefening">
         <a href="./experimenten/sprint 9/pa-oefening/pa.html"><h2>Experiment <em>Progressive Enhancement</em></h2></a>
-    </section>
-</body>
-</html>
+    </section> {% endcomment %}
+
+
+{% render "partials/foot.liquid" %}
