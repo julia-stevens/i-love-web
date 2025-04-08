@@ -2,6 +2,7 @@ import express from "express"
 import { Liquid } from "liquidjs"
 import { readdir, readFile } from "node:fs/promises"
 import { marked } from "marked"
+import matter from "gray-matter"
 
 const files = await readdir("content") // tot nu toe fetch naar Directus, nu doen we dit lokaal
 
@@ -26,14 +27,18 @@ app.get("/:slug", async function (request, response) {
     // console.log(request.params)
 
     const fileContents = await readFile("content/" + request.params.slug + ".md", { encoding: "utf8" })
-    // const markedUp = marked.parse("content/" +  + request.params.slug)
     const markedUp = marked.parse(fileContents)
+    const article = matter(fileContents)
+
 
     // console.log(markedUp)
-    
+
     response.render("artikel.liquid", {
         fileContents: fileContents,
-        markedUp: markedUp
+        markedUp: markedUp,
+        title: article.data.title,
+        date: article.data.date,
+        author: article.data.author
     })
 })
 
