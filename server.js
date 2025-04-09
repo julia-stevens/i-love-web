@@ -16,14 +16,17 @@ app.set("views","./views")
 
 app.use(express.urlencoded({ extended: true }))
 
-
 app.get("/", async function (request, response) {
-    response.render("home.liquid", {
+    response.render("home.liquid")
+})
+
+app.get("/learning-journal", async function (request, response) {
+    response.render("learning-journal.liquid", {
         files: files
     })
 }) 
 
-app.get("/:slug", async function (request, response) {
+app.get("/learning-journal/:slug", async function (request, response) {
     // console.log(request.params)
 
     const fileContents = await readFile("content/" + request.params.slug + ".md", { encoding: "utf8" })

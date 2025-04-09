@@ -1,11 +1,26 @@
 {% render "partials/head.liquid" %}
 
-<h1>Learning Journal</h1>
+<main class="article-content-main">
+    <div class="back-button">
+        <a href="/learning-journal" class="read-more-button">Terug naar Learning Journal</a>
+    </div>
 
-<p>{{ title }}</p> 
-<p>{{ date }}</p> 
-<p>{{ author }}</p> 
-
-{{ markedUp }}
+    <section class="content">
+        <div class="article-heading">
+            <div class="window-buttons">
+                <button class="buttons-red"></button>
+                <button class="buttons-orange"></button>
+                <button class="buttons-green"></button>
+            </div>
+            <p class="window-name">
+                {{ file | slice: 11, 11 }} 
+            </p>
+        </div>
+        
+        <h1>{{ title }}</h1>
+        <h2>{{ date }}</h2>
+        {{ markedUp }}
+    </section>
+</main>
 
 {% render "partials/foot.liquid" %}

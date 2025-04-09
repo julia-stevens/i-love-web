@@ -1,0 +1,36 @@
+{% render "partials/head.liquid" %}
+
+<main>
+    <section class="learning-journal-introduction">
+        <h1>Learning Journal</h1>
+        <p class="text-explanation">Welkom bij mijn learning journal. Hier houd ik wekelijks bij wat ik tijdens mijn opleiding heb gedaan en geleerd. Het is een overzicht van projecten, opdrachten en andere dingen waar ik mee bezig ben en die ik interessant vind — handig voor mezelf en voor iedereen die wil meekijken.</p>
+    </section>
+
+    <section class="journal-articles">
+        {% for file in files %}
+            {% comment %} <a href="/learning-journal/{{ file | slice:0,-3 }}" class="article-link"> {% endcomment %}
+                <article class="journal-article">
+                    <div class="article-heading">
+                        <div class="window-buttons">
+                            <button class="buttons-red"></button>
+                            <button class="buttons-orange"></button>
+                            <button class="buttons-green"></button>
+                        </div>
+                        <p class="window-name">
+                            {{ file | slice: 11, 11 }} 
+                        </p>
+                    </div>                    
+                    <h2>
+                        {{ file | slice: 0,-3 }}
+                    </h2>
+                    <p>
+                        Hier komt een korte samenvatting of de eerste paar zinnen van het artikel. Dit ga ik doen met Frontmatter denk ik.
+                    </p>
+                    <a href="/learning-journal/{{ file | slice:0,-3 }}" class="read-more-button">Lees meer</a>
+                </article>
+            {% comment %} </a> {% endcomment %}
+        {% endfor %}
+    </section>
+</main>
+
+{% render "partials/foot.liquid" %}
