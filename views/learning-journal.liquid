@@ -6,6 +6,29 @@
         <p class="text-explanation">Welkom bij mijn learning journal. Hier houd ik wekelijks bij wat ik tijdens mijn opleiding heb gedaan en geleerd. Het is een overzicht van projecten, opdrachten en andere dingen waar ik mee bezig ben en die ik interessant vind — handig voor mezelf en voor iedereen die wil meekijken.</p>
     </section>
 
+    <section class="filter-articles">
+        <h2>Artikelen filteren</h2>
+
+        <form action="/learning-journal" method="GET">
+            <label for="sprint-filter">Filter per sprint</label>
+            <select name="sprint" id="sprint-filter">
+                <option value="">Kies een sprint</option>
+                <option value="sprint1">Sprint 1</option>
+                <option value="sprint2">Sprint 2</option>
+                <option value="sprint3">Sprint 3</option>
+                <option value="sprint4">Sprint 4</option>
+                <option value="sprint5">Sprint 5</option>
+                <option value="sprint6">Sprint 6</option>
+                <option value="sprint7">Sprint 7</option>
+                <option value="sprint8">Sprint 8</option>
+                <option value="sprint9">Sprint 9</option>
+            </select>
+
+            <button type="submit">Filter op sprint</button>
+
+        </form>
+    </section>
+
     <section class="journal-articles">
         {% for file in files %}
             {% comment %} <a href="/learning-journal/{{ file | slice:0,-3 }}" class="article-link"> {% endcomment %}
@@ -27,6 +50,7 @@
                         Hier komt een korte samenvatting of de eerste paar zinnen van het artikel. Dit ga ik doen met Frontmatter denk ik.
                     </p>
                     <a href="/learning-journal/{{ file | slice:0,-3 }}" class="read-more-button">Lees meer</a>
+                    <p>{{ sprint }}</p>
                 </article>
             {% comment %} </a> {% endcomment %}
         {% endfor %}

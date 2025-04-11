@@ -22,7 +22,8 @@ app.get("/", async function (request, response) {
 
 app.get("/learning-journal", async function (request, response) {
     response.render("learning-journal.liquid", {
-        files: files
+        files: files,
+        sprintFilter: sprintFilter
     })
 }) 
 
@@ -33,15 +34,13 @@ app.get("/learning-journal/:slug", async function (request, response) {
     const markedUp = marked.parse(fileContents)
     const article = matter(fileContents)
 
-
-    // console.log(markedUp)
-
     response.render("artikel.liquid", {
         fileContents: fileContents,
         markedUp: markedUp,
         title: article.data.title,
         date: article.data.date,
-        author: article.data.author
+        author: article.data.author,
+        sprint: article.data.sprint
     })
 })
 
