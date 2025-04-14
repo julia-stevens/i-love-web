@@ -23,7 +23,7 @@ app.get("/", async function (request, response) {
 app.get("/learning-journal", async function (request, response) {
     response.render("learning-journal.liquid", {
         files: files,
-        sprintFilter: sprintFilter
+        // sprintFilter: sprintFilter
     })
 }) 
 
