@@ -109,3 +109,35 @@ Ik heb o.a. geleerd over de 6 principes van digital gardening:
 ## Wat heb ik geleerd?
 * Vaak onwetendheid 
 * Hoe verbeteren: correcte HTML, koppen structuur, 'lees meer' links, focus styles, contrast en samen doen
+
+# Niels Leenheer - HTML Resilience (25-04-25)
+## Geschreven aantekeningen 
+<img src="/assests/images/image.png" width="700">
+<img src="/assests/images/image-1.png" width="700">
+
+## Wat heb ik geleerd?
+* Je mag fouten maken in HTML. De browser lost veel voor je op. 
+* 'World Wide Web, not Wealthy Western Web'
+
+# Kalok Yeung - Emotional Interface (23-05-25)
+## Geschreven aantekeningen
+<img src="/assests/images/emotional-interface.png" width="700">
+<img src="/assests/images/emotional-interface-1.png" width="700">
+
+## Wat heb ik geleerd? 
+* How to digitally blond? Soft UI, Motion, Sound, Content
+
+# Hidde de Vries - display: green; (13-06-2025)
+## Geschreven aantekeningen 
+
+<img src="/assests/images/green.png" width="700">
+<img src="/assests/images/green-1.png" width="700">
+<img src="/assests/images/green-2.png" width="700">
+<img src="/assests/images/green-3.png" width="700">
+<img src="/assests/images/green-4.png" width="700">
+
+
+
+## Wat heb ik geleerd? 
+* "Internet" heeft een grotere CO2-uitstoot dan ik dacht
+* Manieren om deze uitstoot te verminderen (zie aantekeningen)

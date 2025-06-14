@@ -22,14 +22,11 @@ app.get("/", async function (request, response) {
 
 app.get("/learning-journal", async function (request, response) {
     response.render("learning-journal.liquid", {
-        files: files,
-        // sprintFilter: sprintFilter
+        files: files
     })
 }) 
 
 app.get("/learning-journal/:slug", async function (request, response) {
-    // console.log(request.params)
-
     const fileContents = await readFile("content/" + request.params.slug + ".md", { encoding: "utf8" })
     const markedUp = marked.parse(fileContents)
     const article = matter(fileContents)

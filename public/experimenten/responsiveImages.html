@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>responsive images demo</title>
+    <style>
+
+    </style>
+    <!-- <script>
+        const image = document.querySelector("img");
+        const p = document.createElement("p");
+
+        p.textContent = clockImage.currentSrc.endsWith("200px.png")
+            ? "Using the 200px image!"
+            : "Using the 400px image.";
+        document.body.appendChild(p);
+    </script> -->
+</head>
+<body>
+    <h1>Responsive images</h1>
+
+    <!-- <picture>
+        <source type="image/avif" srcset="starynight.avif">
+        <source type="image/webp" srcset="starynight.webp">
+        <img src="starynight.jpg" alt="Plaatje" width="400" height="300" decoding="async">
+    </picture>
+
+    <picture>
+        <source media="(max-width: 400px)" type="image/avif" srcset="starynight-small.avif">
+        <source media="(min-width: 800px)" type="image/avif" srcset="starynight-medium.avif">
+        <source media="(min-width: 1200px)" type="image/avif" srcset="starynight-large.avif">
+
+        <source media="(max-width: 400px)" type="image/webp" srcset="starynight-small.webp">
+        <source media="(min-width: 800px)" type="image/webp" srcset="starynight-medium.webp">
+        <source media="(min-width: 1200px)" type="image/webp" srcset="starynight-large.webp">        
+    </picture> -->
+
+    <picture>
+        <source media="(min-width: 600px)" type="image/avif" srcset="starynight-large.avif">
+        <source type="image/avif" srcset="starynight-medium.avif, starynight-medium@2x.avif 2x">
+        <source type="image/webp" srcset="plaatje.webp, plaatje@2x.webp 2x">
+        <img src="starynight-medium.jpg" srcset="plaatje.png 2x" alt="Plaatje" width="400" height="300" decoding="async">
+      </picture>
+</body>
+</html>

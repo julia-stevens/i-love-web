@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lazy loading experiment</title>
+    <style>
+        .images {
+            display: flex; 
+            flex-direction: column;
+            gap: 40rem;
+            width: 400px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Lazy loading experiment</h1>
+        <div class="images">    
+            <img src="https://picsum.photos/400?random=1" alt="" loading="eager">
+            <img src="https://picsum.photos/400?random=2" alt="" loading="lazy">
+            <img src="https://picsum.photos/400?random=3" alt="" loading="lazy">
+            <img src="https://picsum.photos/400?random=4" alt="" loading="lazy">
+            <img src="https://picsum.photos/400?random=5" alt="" loading="lazy">
+            <img src="https://picsum.photos/400?random=6" alt="" loading="lazy">
+        </div>
+    </main>
+</body>
+</html>
