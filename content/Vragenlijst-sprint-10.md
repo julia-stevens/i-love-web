@@ -30,4 +30,4 @@
 | Ik kan een UI leuker en prettiger maken, zonder de core functionaliteit uit het oog te verliezen | 2 | [repo deeltaak PE](https://github.com/julia-stevens/progressive-enhancement) en [bv bookmark counter in leertaak](https://github.com/julia-stevens/user-experience-enhanced-website/issues/17) |
 | Ik kan scroll-driven animations inzetten om de UI beter te maken | 0 | ik ben hier nog niet aan toegekomen |
 | Ik weet hoe ik verschillende vormen van feature detection in kan zetten in HTML, in CSS en in client-side JS | 2 | HTML: [fallback images bestandtypes](https://github.com/julia-stevens/user-experience-enhanced-website/blob/4a5cc5c6d8a18a6ea81779b5b3072f41234111a4/views/partials/webinar-card.liquid#L5-L32 ), CSS: [`@supports`](https://github.com/julia-stevens/user-experience-enhanced-website/blob/aeb038d7fb9e002d3d1155a4101bfda5b3d6434b/public/styles/header.css#L45-L53), JS: [if view transitions](https://github.com/julia-stevens/user-experience-enhanced-website/blob/aeb038d7fb9e002d3d1155a4101bfda5b3d6434b/public/scripts/bookmarks.js#L54) |
-| **TOTAAL** | punten |
+| **TOTAAL** | 42 punten |
